@@ -1,11 +1,11 @@
-const dueDate = new Date("2026-04-12T18:00:00Z");
+const dueDate = new Date("2026-04-17T18:00:00Z");
 
 const timeEl = document.getElementById("timeRemaining");
 const checkbox = document.getElementById("completeToggle");
 const title = document.getElementById("title");
 const status = document.getElementById("status");
 
-// Time remaining function
+// Time remaining functions
 function updateTimeRemaining() {
   const now = new Date();
   const diff = dueDate - now;
@@ -36,7 +36,7 @@ function updateTimeRemaining() {
   timeEl.textContent = message;
 }
 
-// Checkbox toggle
+// for Checkbox toggle
 checkbox.addEventListener("change", () => {
   if (checkbox.checked) {
     title.classList.add("completed");
@@ -47,7 +47,7 @@ checkbox.addEventListener("change", () => {
   }
 });
 
-// Buttons
+// delete & edit functionality
 function editTask() {
   console.log("edit clicked");
   alert("Edit clicked");
