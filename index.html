@@ -105,6 +105,38 @@
 
   </article>
 
+  // form 
+  <form data-testid="test-todo-edit-form" id="editForm" hidden>
+
+  <label>
+    Title
+    <input type="text" data-testid="test-todo-edit-title-input" id="editTitle">
+  </label>
+
+  <label>
+    Description
+    <textarea data-testid="test-todo-edit-description-input" id="editDesc"></textarea>
+  </label>
+
+  <label>
+    Priority
+    <select data-testid="test-todo-edit-priority-select" id="editPriority">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+  </label>
+
+  <label>
+    Due Date
+    <input type="datetime-local" data-testid="test-todo-edit-due-date-input" id="editDueDate">
+  </label>
+
+  <button type="button" data-testid="test-todo-save-button" onclick="saveEdit()">Save</button>
+  <button type="button" data-testid="test-todo-cancel-button" onclick="cancelEdit()">Cancel</button>
+
+</form>
+
 </main>
 <script src="script.js"></script>
 </body>
