@@ -119,6 +119,104 @@ button[data-testid="test-todo-delete-button"] {
   color: white;
 }
 
+
+
+#priorityIndicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.high { background: red; }
+.medium { background: orange; }
+.low { background: green; }
+
+#descBox {
+  max-height: 40px;
+  overflow: hidden;
+}
+
+#descBox.expanded {
+  max-height: 200px;
+}
+
+#overdueIndicator {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* EDIT FORM STYLING */
+
+#editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+#editForm label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #333;
+  gap: 4px;
+}
+
+#editForm input,
+#editForm textarea,
+#editForm select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#editForm textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+#editForm input:focus,
+#editForm textarea:focus,
+#editForm select:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+#editForm button {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#editForm button[data-testid="test-todo-save-button"] {
+  background: #2e7d32;
+  color: white;
+}
+
+#editForm button[data-testid="test-todo-cancel-button"] {
+  background: #9e9e9e;
+  color: white;
+}
+
+
+#editForm button {
+  flex: 1;
+}
+
+#editForm .form-actions {
+  display: flex;
+  gap: 8px;
+}
+
 @media (max-width: 600px) {
   .todo-card {
     padding: 14px;
